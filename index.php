@@ -477,8 +477,8 @@ function ping($host, $port, $timeout) {
 }
 
 function generateHiddifyTags() {
-    $profileTitle = base64_encode("HiN Miner 🫧");
-    return "#profile-title: base64:{$profileTitle}\n#profile-update-interval: 1\n#subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531\n#support-url: https://hingroup.t.me\n#profile-web-page-url: https://Here_is_Nowhere.t.me
+    $profileTitle = base64_encode("🗽 ÐΛɌ₭ᑎΞ𐒡𐒡 🫧 𓄂𓆃");
+    return "#profile-title: base64:{$profileTitle}\n#profile-update-interval: 1\n#subscription-userinfo: upload=5368709120; download=545097156608; total=955630223360; expire=1762677732\n#support-url: https://darkness_427\n#profile-web-page-url: https://mansor427.t.me
 ";
 }
 
@@ -554,15 +554,15 @@ function getTehranTime() {
 
 function generateUpdateTime() {
     $tehranTime = getTehranTime();
-    return "vless://aaacbbc-cbaa-aabc-dacb-acbacbbcaacb@127.0.0.1:1080?security=tls&type=tcp#⚠️%20FREE%20TO%20USE!\nvless://aaacbbc-cbaa-aabc-dacb-acbacbbcaacb@127.0.0.1:1080?security=tls&type=tcp#🔄%20LATEST-UPDATE%20📅%20{$tehranTime}\n";
+    return "vless://aaacbbc-cbaa-aabc-dacb-acbacbbcaacb@127.0.0.1:1080?security=tls&type=tcp#👻%20ÐΛɌ₭ᑎΞ𐒡𐒡%20👾%20@mansor427\nvless://aaacbbc-cbaa-aabc-dacb-acbacbbcaacb@127.0.0.1:1080?security=tls&type=tcp#🔄%20LATEST-UPDATE%20📅%20{$tehranTime}\n";
 }
 
 function generateEndofConfiguration() {
-    return "vless://acbabca-acab-bcaa-abdc-bbccaabaccab@127.0.0.1:8080?security=tls&type=tcp#👨🏻‍💻%20DEVELOPED-BY%20@YEBEKHE\nvless://acbabca-acab-bcaa-abdc-bbccaabaccab@127.0.0.1:8080?security=tls&type=tcp#📌%20SUPPORT-CONTACT @HiNGROUP.T.ME";
+    return "vless://acbabca-acab-bcaa-abdc-bbccaabaccab@127.0.0.1:8080?security=tls&type=tcp#👽%20Channel%20@darkness_427\nvless://acbabca-acab-bcaa-abdc-bbccaabaccab@127.0.0.1:8080?security=tls&type=tcp#👹ÐΛɌ₭ᑎΞ𐒡𐒡 🫧 𓄂𓆃👹";
 }
 
-$source = "HiNMiner";
-$configsList = generateHiddifyTags() . "\n" . generateUpdateTime() . getTelegramChannelConfigs("HiNMiner") . generateEndofConfiguration();
+$source = "Miner_V2ray";
+$configsList = generateHiddifyTags() . "\n" . generateUpdateTime() . getTelegramChannelConfigs("Miner_V2ray") . generateEndofConfiguration();
 
 file_put_contents("Miner/normal", $configsList);
 file_put_contents("Miner/base64", base64_encode($configsList));
