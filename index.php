@@ -561,8 +561,8 @@ function generateEndofConfiguration() {
     return "vless://acbabca-acab-bcaa-abdc-bbccaabaccab@127.0.0.1:8080?security=tls&type=tcp#👽%20Channel%20@darkness_427\nvless://acbabca-acab-bcaa-abdc-bbccaabaccab@127.0.0.1:8080?security=tls&type=tcp#👹ÐΛɌ₭ᑎΞ𐒡𐒡 🫧 𓄂𓆃👹";
 }
 
-$source = "Miner_V2ray";
-$configsList = generateHiddifyTags() . "\n" . generateUpdateTime() . getTelegramChannelConfigs("Miner_V2ray") . generateEndofConfiguration();
+$source = "v2miner";
+$configsList = generateHiddifyTags() . "\n" . generateUpdateTime() . getTelegramChannelConfigs("v2miner") . generateEndofConfiguration();
 
 file_put_contents("Miner/normal", $configsList);
 file_put_contents("Miner/base64", base64_encode($configsList));
